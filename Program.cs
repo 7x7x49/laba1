@@ -4,13 +4,13 @@
     {
         {
             Console.WriteLine("Введите положительный х меньше 1(0,1; 0,2 ...)");
-            double x = Convert.ToDouble(Console.ReadLine()); ;
-            double j = 0;
+            double x = Convert.ToDouble(Console.ReadLine()); 
             while (Math.Abs(x) > 1)
             {
                 Console.WriteLine("Введите положительный х меньше 1");
                 x = Convert.ToDouble(Console.ReadLine());
             }
+            double j = x;
 
 
             Console.WriteLine("Введите целочисленный n больше 0(1, 2 ...)");
