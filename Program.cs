@@ -5,6 +5,7 @@
         {
             Console.WriteLine("Введите положительный х меньше 1(0,1; 0,2 ...)");
             double x = Convert.ToDouble(Console.ReadLine()); ;
+            double j = 0;
             while (Math.Abs(x) > 1)
             {
                 Console.WriteLine("Введите положительный х меньше 1");
@@ -23,10 +24,10 @@
             int b = 1;
             while (b < n + 1)
             {
-                x += chislitel(b) * Math.Pow(x, 2 * b + 1) / (znamenatel(b) * (2 * b + 1));
+                j += chislitel(b) * Math.Pow(x, 2 * b + 1) / (znamenatel(b) * (2 * b + 1));
                 b++;
             }
-            Console.WriteLine("Результат: " + ((3.14/2)-x));
+            Console.WriteLine("Результат: " + ((3.14/2)-j));
         }
     }
     public static int chislitel(int b)
