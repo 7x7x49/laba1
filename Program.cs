@@ -10,7 +10,7 @@
                 Console.WriteLine("Введите положительный х меньше 1");
                 x = Convert.ToDouble(Console.ReadLine());
             }
-            double j = x;
+            double j = 0;
 
 
             Console.WriteLine("Введите целочисленный n больше 0(1, 2 ...)");
@@ -27,7 +27,7 @@
                 j += chislitel(b) * Math.Pow(x, 2 * b + 1) / (znamenatel(b) * (2 * b + 1));
                 b++;
             }
-            Console.WriteLine("Результат: " + ((3.14/2)-j));
+            Console.WriteLine("Результат: " + (Math.PI-(x+j)));
         }
     }
     public static int chislitel(int b)
